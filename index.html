@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="coffee">
+	<!-- 🌵 Made with Needle — https://needle.tools -->
+<head>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://hosseinbannaei.github.io/testingMenu.git/include/poster.webp">
+  <meta name="og:image" content="https://hosseinbannaei.github.io/testingMenu.git/include/poster.webp">
+  <meta name="og:image:width" content=1080>
+  <meta name="og:image:height" content=1080>
+  <meta name="og:title" content="Sandbox">
+  <meta name="generator" content="Needle Engine for Unity 3.7.3-exp">
+  <meta name="needle-engine" content="3.7.3-alpha.2">
+
+		<meta charset="UTF-8" />
+		<link rel="icon" href="./assets/favicon-8d99ceea.ico" />
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+		<title>Sandbox</title>
+
+		
+		<meta name="description" content="🌵 Made with Needle Engine" />
+		<meta property="og:description" content="🌵 Made with Needle Engine" />
+
+		<meta name="robots" content="index,follow" />
+		<meta name="url" content="http://needle.tools" />
+
+		
+		<script type="module" crossorigin src="./assets/index-658e9ae7.js"></script>
+		<link rel="stylesheet" href="./assets/index-f0c960be.css">
+	</head>
+
+	<body>
+		<script>/* needle: injected fix for peerjs */
+window.global = window;
+var parcelRequire;</script>
+
+		<script>
+			// hack for simple-peer
+			window.global = window;
+			var parcelRequire;
+		</script>
+		
+		
+
+		<needle-engine></needle-engine>
+
+		<div id="mainMenu" class="w-full h-full fixed inset-0 z-[999999] bg-base-100">
+			<div class="flex flex-col py-8 gap-y-2 items-center justify-center h-2/6">
+				<iconify-icon icon="solar:augmented-reality-broken" width="8rem" height="8rem" class="text-primary"></iconify-icon>
+				<h3 dir="rtl" class="text-primary text-2xl font-bold font-tanha-fd">به منوی واقعیت افزوده خوش آمدید!</h3>
+			</div>
+			<!-- Viewport element -->
+			<div id="carousel" class="flicking-viewport h-4/6">
+				<!-- Camera element -->
+				<div class="flicking-camera">
+					<!-- Panels, class names are your choice -->
+					<div class="panel">
+						<div class="card mx-1 bg-gray-100 shadow-xl">
+							<figure class="px-10 pt-10">
+								<iconify-icon icon="ion:restaurant-outline" width="4rem" height="4rem" class="text-primary"></iconify-icon>
+							</figure>
+							<div class="card-body items-center gap-y-3 text-center">
+								<h2 class="card-title font-tanha-fd">رستوران</h2>
+								<p class="font-tanha-fd">در این منو می‌توانید غذا های رستوران را مشاهده کنید</p>
+								<div class="card-actions">
+									<button class="btn btn-primary font-tanha-fd">ورود</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="card mx-1 bg-gray-100 shadow-xl">
+							<figure class="px-10 pt-10">
+								<iconify-icon icon="ion:restaurant-outline" width="4rem" height="4rem" class="text-primary"></iconify-icon>
+							</figure>
+							<div class="card-body items-center gap-y-3 text-center">
+								<h2 class="card-title">Restaurant!</h2>
+								<p>You can see menu of a restaurant here</p>
+								<div class="card-actions">
+									<button class="btn btn-primary">Take a Look!</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="card mx-1 bg-gray-100 shadow-xl">
+							<figure class="px-10 pt-10">
+								<iconify-icon icon="ion:restaurant-outline" width="4rem" height="4rem" class="text-primary"></iconify-icon>
+							</figure>
+							<div class="card-body items-center gap-y-3 text-center">
+								<h2 class="card-title">Restaurant!</h2>
+								<p>You can see menu of a restaurant here</p>
+								<div class="card-actions">
+									<button class="btn btn-primary">Take a Look!</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flicking-pagination"></div>
+			</div>
+			<div hidden>
+				<div class="card w-96 bg-gray-100 shadow-xl">
+					<figure class="px-10 pt-10">
+						<iconify-icon icon="ion:restaurant-outline" width="4rem" height="4rem" class="text-primary"></iconify-icon>
+					</figure>
+					<div class="card-body items-center gap-y-3 text-center">
+						<h2 class="card-title">Restaurant!</h2>
+						<p>You can see menu of a restaurant here</p>
+						<div class="card-actions">
+							<button class="btn btn-primary">Take a Look!</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="controls" class="fixed inset-0 pointer-events-none flex flex-col justify-end pb-28 px-3 md:px-0 md:pb-0 md:justify-center container mx-auto">
+			<button id="closeCategory" class="absolute top-5 left-3 md:left-0 btn btn-primary btn-square pointer-events-auto">
+				<iconify-icon icon="ic:round-exit-to-app" width="1.5rem" height="1.5rem"></iconify-icon>
+			</button>
+			<div id="modelInformation" class="flex flex-col items-center gap-y-3 absolute top-5 inset-x-0 mx-auto w-fit font-tanha-fd">
+				<p id="foodName" class="text-lg text-center">نام غذا یا خوراکی</p>
+				<p class="text-2xl">قیمت : <span id="price" class="text-white">3000</span></p>
+				<div id="status" class="badge badge-lg badge-error">ناموجود</div>
+			</div>
+			<div class="flex flex-row w-full h-fit justify-between justify-self-end">
+				<button id="prev" class="btn btn-primary font-tanha-fd pointer-events-auto">
+					<iconify-icon icon="uil:angle-left-b" width="1.5rem" height="1.5rem"></iconify-icon>
+					قبلی
+				</button>
+				<button id="next" class="btn btn-primary font-tanha-fd pointer-events-auto">
+					بعدی
+					<iconify-icon icon="uil:angle-right-b" width="1.5rem" height="1.5rem"></iconify-icon>
+				</button>
+			</div>
+			<div id="materialChanger" class="flex flex-row w-full h-fit justify-between justify-self-end mt-3 invisible">
+				<button id="prevMat" class="btn btn-secondary font-tanha-fd pointer-events-auto">
+					<iconify-icon icon="uil:angle-left-b" width="1.5rem" height="1.5rem"></iconify-icon>
+					طرح قبل
+				</button>
+				<button id="nextMat" class="btn btn-secondary font-tanha-fd pointer-events-auto">
+					طرح بعد
+					<iconify-icon icon="uil:angle-right-b" width="1.5rem" height="1.5rem"></iconify-icon>
+				</button>
+			</div>
+			<button id="resetCamBtn" class="absolute bottom-5 right-3 md:right-0 btn btn-primary btn-sm font-tanha-fd pointer-events-auto">
+				بازیابی دوربین
+				<iconify-icon icon="carbon:reset"></iconify-icon>
+			</button>
+		</div>
+	</body>
+</html>
